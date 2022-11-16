@@ -17,7 +17,7 @@ namespace Financeiro.API.Data
         {
             if (!options.IsConfigured)
             {
-                options.UseSqlServer("data source=localhost;Database=Financeiro;User Id=sa;Password=lucas869259;TrustServerCertificate=true");
+                options.UseSqlServer("data source=localhost;Database=FinanceiroDB;User Id=sa;Password=lucas869259;TrustServerCertificate=true");
             }
         }
 

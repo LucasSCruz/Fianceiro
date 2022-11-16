@@ -47,6 +47,7 @@ namespace Financeiro.API.Migrations
                     nomeMovimentacao = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     valor = table.Column<double>(type: "float", nullable: false),
+                    DataMovimentacao = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataCriacao = table.Column<DateTime>(type: "datetime2", nullable: false),
                     contaId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     bancoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)

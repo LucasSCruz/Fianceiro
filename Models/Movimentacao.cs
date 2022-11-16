@@ -8,6 +8,7 @@ namespace Financeiro.API.Models
         public string nomeMovimentacao {get; set;}
         public string tipo {get; set;}
         public double valor {get; set;}
+        public DateTime DataMovimentacao {get; set;}
         public DateTime DataCriacao {get; set;}
 
         [ForeignKey("Conta")]

@@ -74,6 +74,9 @@ namespace Financeiro.API.Migrations
                     b.Property<DateTime>("DataCriacao")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("DataMovimentacao")
+                        .HasColumnType("datetime2");
+
                     b.Property<Guid>("bancoId")
                         .HasColumnType("uniqueidentifier");
 

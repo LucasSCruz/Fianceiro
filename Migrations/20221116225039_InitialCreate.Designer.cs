@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Financeiro.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20221116220854_InitialCreate")]
+    [Migration("20221116225039_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -75,6 +75,9 @@ namespace Financeiro.API.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataMovimentacao")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("bancoId")
